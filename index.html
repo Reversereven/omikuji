@@ -1,4 +1,4 @@
-<DOCTYPE html>
+ <DOCTYPE html>
 <html lang="ja">
  <link rel="stylesheet" href="css/styles.css">
 <head>
@@ -6,33 +6,11 @@
       <title>おみくじ</title>
 </head>
 <body>
+ <script src="js/omikuji.js"></script>
   <div id="position">
     <button id="re">
       <div id="btn">おみくじ</div>
     </button>
   </div>
-  <script>
-
-    var msg = new Array();
-    msg[0] = "大吉";
-    msg[1] = "中吉";
-    msg[2] = "小吉";
-    msg[3] = "吉";
-    msg[4] = "末吉";
-    msg[5] = "凶";
-
-    var rslt =Math.floor(Math.random()*msg.length);
-
-
-    // document.getElementById("re").addEventListener'Click',function(){
-    //   var e = document.getElementById("btn");
-    //   e.textContent = (msg[rslt]);
-    // };
-    document.getElementById("re").onclick = function(){
-      var e = document.getElementById("btn");
-      e.textContent = (msg[rslt]);
-    };
-
-  </script>
-  </body>
-  </html>
+</body>
+</html>
