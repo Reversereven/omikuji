@@ -7,7 +7,7 @@
   msg[4] = "末吉";
   msg[5] = "凶";
 
-  document.getElementById("re").onclick = function(){
+  document.getElementById("re").onclick = function() {
     var e = document.getElementById("btn");
     var rslt =Math.floor(Math.random()*msg.length);
     e.textContent = (msg[rslt]);
