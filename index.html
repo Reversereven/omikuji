@@ -7,15 +7,32 @@
 </head>
 <body>
   <div id="position">
-    <button>
+    <button id="re">
       <div id="btn">おみくじ</div>
     </button>
   </div>
   <script>
-    var e = document.getElementById("btn");
-    e.textContent = "吉"；
+
+    var msg = new Array();
+    msg[0] = "大吉";
+    msg[1] = "中吉";
+    msg[2] = "小吉";
+    msg[3] = "吉";
+    msg[4] = "末吉";
+    msg[5] = "凶";
+
+    var rslt =Math.floor(Math.random()*msg.length);
+
+
+    // document.getElementById("re").addEventListener'Click',function(){
+    //   var e = document.getElementById("btn");
+    //   e.textContent = (msg[rslt]);
+    // };
+    document.getElementById("re").onclick = function(){
+      var e = document.getElementById("btn");
+      e.textContent = (msg[rslt]);
+    };
+
   </script>
-  <!-- ↑自分では合ってると思うのですが、
-  書き変わらないのでどこかが間違っているんだと思います -->
   </body>
   </html>
